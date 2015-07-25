@@ -23,6 +23,7 @@
     "jquery": "~2.1.4",
     "lato": "~0.3.0",
     "normalize.css": "~3.0.3",
-    "font-awesome": "~4.3.0"
+    "font-awesome": "~4.3.0",
+    "angular": "~1.4.3"
   }
 }
