@@ -12,7 +12,24 @@
   ];
 
   function articleSvc(ArticleREST, Article) {
-    this.list = [];
+    var self = this;
+    self.list = [];
+
+    self.initialize = initialize;
+
+    function initialize() {
+      ArticleREST.getAll()
+        .success(function(resp) {
+          // clearList(self.list);
+          resp.results.forEach(function(data) {
+            self.list.push(new Article(data));
+          })
+        });
+    }
+
+    function clearList(arr) {
+      arr.length = 0;
+    }
   }
 
 })(window.angular);

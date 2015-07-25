@@ -12,7 +12,7 @@
 
   function articleREST(http) {
     this.getAll = function() {
-      return http.get('www.minibalita.com/json/reader/1');
+      return http.get('http://www.minibalita.com/json/reader/1');
     };
   }
 

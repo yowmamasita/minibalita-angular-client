@@ -14,6 +14,8 @@
     var vm = this;
 
     vm.list = Articles.list;
+
+    Articles.initialize();
   }
 
 })(window.angular);

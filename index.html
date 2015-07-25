@@ -56,14 +56,14 @@
       <div class="col-md-offset-2 col-md-6" ng-controller="ArticleCtrl as vm">
 
         <!-- ARTICLE -->
-        <div class="row">
+        <div class="row" ng-repeat="article in vm.list">
           <div class="col-md-12">
             <article>
 
               <!-- ARTICLE PICTURE -->
-              <img src="https://minibalita-images.s3.amazonaws.com/8303b698-14a0-42b4-9f99-e2afad38988d.jpeg" class="img-thumbnail" width="100%">
+              <img src="{{article.image_path}}" class="img-thumbnail" width="100%">
 
-              <h3><a href="/reader/13437/1/Congress-passed-Aquino-landmark-bills-but-.-.-.">ARTICLE TITLE</a></h3>
+              <h3><a href="/reader/13437/1/Congress-passed-Aquino-landmark-bills-but-.-.-." ng-bind="article.title"></a></h3>
               <div class="row dt-byline">
                 <!-- ARTICLE CATEGORY -->
                 <div class="col-md-6">
@@ -141,6 +141,7 @@
 
   <script src="/bower_components/jquery/dist/jquery.min.js"></script>
   <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="/bower_components/momentjs/min/moment.min.js"></script>
   <script src="/bower_components/angular/angular.min.js"></script>
 
   <!-- Application code -->

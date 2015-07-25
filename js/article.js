@@ -12,6 +12,15 @@
 
   function articleModel() {
     function Article(data) {
+      // category
+      // id
+      // image_path
+      // sona_name_processed
+      // source
+      // summary
+      // timestamp
+      // title
+      // url
       angular.extend(this, data);
     }
 
