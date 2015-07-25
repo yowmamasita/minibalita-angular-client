@@ -13,6 +13,7 @@
 
   function articleSvc(ArticleREST, Article) {
     var self = this;
+
     self.list = [];
 
     self.initialize = initialize;
@@ -23,13 +24,14 @@
           // clearList(self.list);
           resp.results.forEach(function(data) {
             self.list.push(new Article(data));
-          })
+          });
         });
     }
 
     function clearList(arr) {
       arr.length = 0;
     }
+
   }
 
 })(window.angular);

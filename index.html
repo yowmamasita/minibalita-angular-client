@@ -61,15 +61,15 @@
             <article>
 
               <!-- ARTICLE PICTURE -->
-              <img src="{{article.image_path}}" class="img-thumbnail" width="100%">
+              <img ng-src="{{article.image_path}}" class="img-thumbnail" width="100%">
 
               <h3><a href="/reader/13437/1/Congress-passed-Aquino-landmark-bills-but-.-.-." ng-bind="article.title"></a></h3>
               <div class="row dt-byline">
                 <!-- ARTICLE CATEGORY -->
                 <div class="col-md-6">
-                  <a class="dt-category-link" href="/category/News"><span class="label dt-News">News</span></a>
+                  <a class="dt-category-link" ng-href="/category/{{article.category}}"><span class="label" ng-class="article.ngClass" ng-bind="article.category"></span></a>
                   <!-- ARTICLE SOURCE NAME -->
-                  from <a href="/source/SOURCE">SOURCE</a>
+                  from <a ng-href="/source/{{article.source}}" ng-bind="article.source"></a>
                 </div>
                 <!-- DATE PUBLISHED -->
                 <div class="col-md-6 text-right">

@@ -22,6 +22,8 @@
       // title
       // url
       angular.extend(this, data);
+      this.ngClass = {};
+      this.ngClass['dt-' + this.category] = true;
     }
 
     return Article;
