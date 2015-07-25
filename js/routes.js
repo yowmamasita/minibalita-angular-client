@@ -13,14 +13,24 @@
   function routes($routeProvider, $locationProvider) {
 
     $routeProvider
+      .when('/', {
+        templateUrl: '/partials/main.partial.html',
+        controller: 'ArticleCtrl',
+        controllerAs: 'vm',
+      })
       .when('/source/:sourceName', {
-        templateUrl: '/source.partial.html',
+        templateUrl: '/partials/source.partial.html',
         controller: 'SourceCtrl',
         controllerAs: 'vm',
       })
       .when('/category/:categoryName', {
-        templateUrl: '/category.partial.html',
+        templateUrl: '/partials/category.partial.html',
         controller: 'CategoryCtrl',
+        controllerAs: 'vm',
+      })
+      .when('/article/:articleId/:articleName', {
+        templateUrl: '/partials/single.partial.html',
+        controller: 'SingleCtrl',
         controllerAs: 'vm',
       })
       .otherwise({
