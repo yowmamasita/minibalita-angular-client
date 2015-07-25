@@ -26,7 +26,7 @@
   <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
 </head>
-<body>
+<body ng-app="mbApp">
 
   <!-- HEADER -->
   <nav class="navbar navbar-default dt-nav">
@@ -53,7 +53,7 @@
 
     <div class="row">
       <!-- ARTICLE LIST -->
-      <div class="col-md-offset-2 col-md-6">
+      <div class="col-md-offset-2 col-md-6" ng-controller="ArticleCtrl as vm">
 
         <!-- ARTICLE -->
         <div class="row">
@@ -141,7 +141,14 @@
 
   <script src="/bower_components/jquery/dist/jquery.min.js"></script>
   <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="/bower_components/angular/angular.min.js"></script>
 
+  <!-- Application code -->
+  <script src="/js/main.js"></script>
+  <script src="/js/rest.js"></script>
+  <script src="/js/article.ctrl.js"></script>
+
+  <!-- GA -->
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
