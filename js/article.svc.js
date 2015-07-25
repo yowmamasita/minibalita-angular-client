@@ -7,10 +7,11 @@
     .service('ArticleSvc', articleSvc);
 
   articleSvc.$inject = [
+    'ArticleREST',
     'ArticleModel',
   ];
 
-  function articleSvc(Article) {
+  function articleSvc(ArticleREST, Article) {
     this.list = [];
   }
 

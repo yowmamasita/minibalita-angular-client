@@ -12,6 +12,8 @@
 
   function articleCtrl(Articles) {
     var vm = this;
+
+    vm.list = Articles.list;
   }
 
 })(window.angular);

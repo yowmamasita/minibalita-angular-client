@@ -7,10 +7,10 @@
     .factory('ArticleModel', articleModel);
 
   articleModel.$inject = [
-    'ArticleREST',
+    //
   ];
 
-  function articleModel(ArticleREST) {
+  function articleModel() {
     function Article(data) {
       angular.extend(this, data);
     }
