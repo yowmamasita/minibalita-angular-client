@@ -1,0 +1,21 @@
+{
+  "name": "minibalita",
+  "version": "0.0.1",
+  "authors": [
+    "Ben Sarmiento <me@bensarmiento.com>"
+  ],
+  "description": "summarized news",
+  "main": "main.js",
+  "keywords": [
+    "news"
+  ],
+  "license": "MIT",
+  "homepage": "http://www.minibalita.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
