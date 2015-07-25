@@ -1,0 +1,149 @@
+.img-thumbnail {
+  border-radius: 0;
+}
+
+body {
+    font-family: "latoregular", Helvetica, Arial;
+    background-color: #eee;
+}
+
+.table td, th {
+    text-align: center;   
+}
+
+.dt-nav {
+    /*background-color: #09f;*/
+    background-color: #fff;
+    /*border-color: #09f;*/
+    border-bottom: 3px solid #09f;
+    border-radius: 0px;
+    height: 75px;
+    margin-bottom: 0px;
+}
+
+.dt-nav a {
+    color: #000 !important;
+}
+
+.dt-nav a:hover {
+    color: #888 !important;
+}
+
+.dt-brand {
+    color: #eee !important;
+}
+
+.dt-prev-next {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+article {
+    margin-top: 30px;
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+    background-color: #fff;
+}
+
+article li {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.dt-announcement {
+    background-color: #09f;
+    padding: 5px 5px 5px 10px;
+    border-bottom: 3px solid #ccc;
+    color: #eee;
+}
+
+.dt-announcement a {
+    color: #eee;
+}
+
+.dt-sidebar {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #09f;
+    color: #eee;
+    margin-top: 30px;
+}
+
+.dt-sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 15px;
+}
+
+.dt-sidebar li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.dt-sidebar a {
+    color: #eee;
+}
+
+.dt-sidebar a:hover {
+    color: #ddd;
+}
+
+.dt-sidenotes {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.dt-sidenotes a:hover {
+    text-decoration: none;
+}
+
+.dt-footer {
+    background-color: #09f;
+    color: #fff;
+    padding: 20px;
+}
+
+.dt-footer a {
+    color: #0b2b61;
+}
+
+.dt-footer a:hover {
+    color: #333;
+    text-decoration: none;
+}
+
+.dt-byline {
+    margin-bottom: 20px;
+}
+
+.dt-News {
+    background-color: #d62728;
+}
+
+.dt-Business {
+    background-color: #1f77b4;
+}
+
+.dt-Entertainment {
+    background-color: #e377c2;
+}
+
+.dt-Sports {
+    background-color: #8c564b;
+}
+
+.dt-Global {
+    background-color: #2ca02c;
+}
+
+.dt-Technology {
+    background-color: #7f7f7f;
+}
+
+.dt-Lifestyle {
+    background-color: #bcbd22;
+}
+
+.dt-category-link:hover {
+    text-decoration: none;
+}
