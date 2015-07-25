@@ -63,7 +63,7 @@
               <!-- ARTICLE PICTURE -->
               <img ng-src="{{article.image_path}}" class="img-thumbnail" width="100%">
 
-              <h3><a href="/reader/13437/1/Congress-passed-Aquino-landmark-bills-but-.-.-." ng-bind="article.title"></a></h3>
+              <h3><a href="/article/" ng-bind="article.title"></a></h3>
               <div class="row dt-byline">
                 <!-- ARTICLE CATEGORY -->
                 <div class="col-md-6">
@@ -72,9 +72,7 @@
                   from <a ng-href="/source/{{article.source}}" ng-bind="article.source"></a>
                 </div>
                 <!-- DATE PUBLISHED -->
-                <div class="col-md-6 text-right">
-                  July 26, 2015 - 02:20 AM
-                </div>
+                <div class="col-md-6 text-right" ng-bind="article.timestamp | unixTs | tzFix | tsFormat"></div>
               </div>
               <strong>Article Highlights:</strong>
               <ul class="bullet-list">
@@ -146,6 +144,7 @@
 
   <!-- Application code -->
   <script src="/js/main.js"></script>
+  <script src="/js/filters.js"></script>
   <script src="/js/rest.js"></script>
   <script src="/js/article.js"></script>
   <script src="/js/article.svc.js"></script>
