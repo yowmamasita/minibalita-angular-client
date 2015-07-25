@@ -7,13 +7,11 @@
     .controller('ArticleCtrl', articleCtrl);
 
   articleCtrl.$inject = [
-    'ArticleREST',
+    'ArticleSvc',
   ];
 
-  function articleCtrl(ArticleREST) {
+  function articleCtrl(Articles) {
     var vm = this;
   }
 
 })(window.angular);
-
-
