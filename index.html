@@ -63,7 +63,7 @@
               <!-- ARTICLE PICTURE -->
               <img ng-src="{{article.image_path}}" class="img-thumbnail" width="100%">
 
-              <h3><a href="/article/" ng-bind="article.title"></a></h3>
+              <h3><a ng-href="{{article.reader_url}}" ng-bind="article.title"></a></h3>
               <div class="row dt-byline">
                 <!-- ARTICLE CATEGORY -->
                 <div class="col-md-6">
@@ -78,12 +78,12 @@
               <ul class="bullet-list">
 
                 <!-- HIGHLIGHTS -->
-                <li>blah blah blah</li>
+                <li ng-repeat="highlight in article.summary" ng-bind="highlight"></li>
 
               </ul>
               <div class="row">
                 <div class="col-md-12 text-right">
-                  <i class="fa fa-newspaper-o"></i> <a href="_REPLACE_ARTICLE_TRUE_URL_" rel="nofollow">read the article</a>
+                  <i class="fa fa-newspaper-o"></i> <a ng-href="{{article.url}}" rel="nofollow">read the article</a>
                 </div>
               </div>
             </article>

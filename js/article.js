@@ -22,8 +22,11 @@
       // title
       // url
       angular.extend(this, data);
+      // category class
       this.ngClass = {};
       this.ngClass['dt-' + this.category] = true;
+      // reader url
+      this.reader_url = 'http://www.minibalita.com/reader/' + this.id + '/1/' + encodeURIComponent(this.title);
     }
 
     return Article;
